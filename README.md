@@ -1,0 +1,45 @@
+# 🐾 PetHub - Backend
+
+Este es el backend de **PetHub**, una aplicación web para la gestión de mascotas y citas médicas veterinarias. Este servicio permite a los usuarios crear y administrar sus mascotas y citas, mientras que los administradores pueden ver, editar y eliminar cualquier cita registrada.
+
+## 🚀 Tecnologías utilizadas
+
+- **Node.js**: Entorno de ejecución para JavaScript en el servidor.
+- **Express.js**: Framework minimalista para crear el servidor y las rutas.
+- **Knex.js**: Query builder para interactuar con la base de datos MySQL.
+- **MySQL**: Sistema de gestión de bases de datos relacional.
+- **JWT (JSON Web Tokens)**: Para autenticación segura basada en tokens.
+- **dotenv**: Para la gestión de variables de entorno.
+
+## 🔐 Autenticación y Roles
+
+- Sistema de login con generación y validación de **tokens JWT**.
+- Dos tipos de roles:
+  - `USER`: Puede registrar, editar y eliminar sus propias mascotas, y crear citas.
+  - `ADMIN`: Puede ver todas las mascotas y editar o eliminar cualquier cita.
+
+## 🧪 Pruebas con Postman
+
+- Se testearon todas las rutas del backend desde **Postman**, incluyendo:
+  - Registro e inicio de sesión.
+  - Validación de tokens.
+  - Pruebas de roles para restringir rutas.
+  - Operaciones CRUD para mascotas y citas.
+
+## 🛠 Instalación y ejecución
+
+```bash
+# Clona el repositorio
+git clone https://github.com/tu-usuario/pethub-backend.git
+
+# Entra en la carpeta del proyecto
+cd pethub-backend
+
+# Instala las dependencias
+npm install
+
+# Crea un archivo .env y configura las variables necesarias
+touch .env
+
+# Inicia el servidor en modo desarrollo
+npm run dev
