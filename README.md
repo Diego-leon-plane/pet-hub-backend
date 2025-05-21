@@ -26,6 +26,13 @@ Este es el backend de **PetHub**, una aplicación web para la gestión de mascot
   - Pruebas de roles para restringir rutas.
   - Operaciones CRUD para mascotas y citas.
 
+## ⚙️ Variables de entorno
+
+Copiar el archivo `.env.example` como `.env` y completa con tus datos locales:
+
+```bash
+cp .env.example .env
+
 ## 🛠 Instalación y ejecución
 
 ```bash
@@ -38,8 +45,12 @@ cd pethub-backend
 # Instala las dependencias
 npm install
 
+# Ejecuta las migraciones para crear las tablas en la base de datos
+npx knex migrate:latest --knexfile knexfile.js
+
 # Crea un archivo .env y configura las variables necesarias
 touch .env
 
-# Inicia el servidor en modo desarrollo
-npm run dev
+# Inicia el servidor (modo desarrollo con nodemon)
+npm run dev, por defecto, el servidor corre en:
+📍 http://localhost:3200
