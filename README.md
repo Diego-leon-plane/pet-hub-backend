@@ -32,8 +32,9 @@ Copiar el archivo `.env.example` como `.env` y completa con tus datos locales:
 
 ```bash
 cp .env.example .env
-```bash
+```
 ### 📝 Las variables disponibles incluyen:
+
 ```bash
 # Puerto donde se ejecuta el servidor
 PORT=3200
