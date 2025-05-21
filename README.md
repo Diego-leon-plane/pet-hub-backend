@@ -48,7 +48,7 @@ DB_NAME=
 # Clave secreta para firmar y verificar los tokens JWT
 JWT_SECRET=
 
-
+```
 ## 🛠 Instalación y ejecución
 
 ```bash
@@ -68,5 +68,7 @@ npx knex migrate:latest --knexfile knexfile.js
 touch .env
 
 # Inicia el servidor (modo desarrollo con nodemon)
-npm run dev, por defecto, el servidor corre en:
+npm run dev
+```
+## Por defecto, el servidor corre en:
 📍 http://localhost:3200
