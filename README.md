@@ -33,6 +33,20 @@ Copiar el archivo `.env.example` como `.env` y completa con tus datos locales:
 ```bash
 cp .env.example .env
 
+## Las variables disponibles incluyen:
+
+#Puerto donde se ejecuta el servidor 
+PORT=3200
+
+#Base de datos 
+DB_HOST=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
+
+#Clave secreta para firmar y verificar los tokens JWT
+JWT_SECRET=
+
 ## 🛠 Instalación y ejecución
 
 ```bash
