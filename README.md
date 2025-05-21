@@ -37,7 +37,7 @@ cp .env.example .env
 
 ```bash
 # Puerto donde se ejecuta el servidor
-PORT=3200
+PORT=
 
 # Configuración de la base de datos MySQL
 DB_HOST=
